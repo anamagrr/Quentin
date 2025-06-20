@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Pulp Fiction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pulp-page">
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="IngloriousBasterds.html">Inglourious Basterds</a></li>
+        <li><a href="KillBill.html">Kill Bill</a></li>
+        <li><a href="PulpFiction.html" class="active">Pulp Fiction</a></li>
+        <li><a href="quentin.html">Quentin Tarantino</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Pulp Fiction</h1>
+    <img src="./img/poster1.jpg" alt="Pulp Fiction Poster">
+
+    <p>
+      "Pulp Fiction" წარმოადგენს კვენტინ ტარანტინოს ნამდვილი კინოს კლასიკას — ფილმი, რომელიც ცნობილია არალინეარული თხრობით, დიალოგებით სავსე სცენებით და შავ-იუმორისტული სტილით. ფილმში მთავარი როლები შესრულებული აქვთ ჯონ ტრავოლტას, უმა თურმანსა და სემუელ ელ ჯექსონს.
+    </p>
+
+    <section>
+      <h2>მიმოხილვის ფორმა</h2>
+      <form action="review.php" method="post">
+        <label for="name">სახელი:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">ელ.ფოსტა:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">შეფასება:</label><br>
+        <select id="rating" name="rating">
+          <option value="5">5</option>
+          <option value="4">4</option>
+          <option value="3">3</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select><br><br>
+
+        
+        <textarea id="comment" name="comment" rows="5" required></textarea><br><br>
+
+        <button type="submit">გაგზავნა</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Quentin Tarantino. ყველა უფლება დაცულია</p>
+  </footer>
+
+</body>
+</html>

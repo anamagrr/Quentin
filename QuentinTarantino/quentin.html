@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quentin Tarantino</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Quentin Tarantino</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">მთავარი</a></li>
+        <li><a href="IngloriousBasterds.html">Inglourious Basterds</a></li>
+        <li><a href="KillBill.html">Kill Bill</a></li>
+        <li><a href="PulpFiction.html">Pulp Fiction</a></li>
+        <li><a href="quentin.html" class="active">Quentin Tarantino</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <h2>გალერეა</h2>
+      <div class="gallery-wrapper">
+        <button class="prev">⟨</button>
+        <div class="gallery-container">
+          <div class="gallery-track">
+            <img src="./img/tar1.jpg" alt="Scene 1">
+            <img src="./img/tar3.jpg" alt="Scene 3">
+            <img src="./img/tar4.jpg" alt="Scene 4">
+            <img src="./img/tar5.jpg" alt="Scene 5">
+            <img src="./img/pulp2.jpg" alt="Scene 6">
+            <img src="./img/tar3.jpg" alt="Scene 7">
+          </div>
+        </div>
+        <button class="next">⟩</button>
+      </div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <span id="closeModal" class="close">&times;</span>
+        <img id="modalImg" class="modal-content" src="" alt="Zoomed">
+      </div>
+    </section>
+
+    <section class="fan-form">
+      <h2>გიყვარს ტარანტინოს ფილმები?</h2>
+      <form action="backend/submit.php" method="POST">
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="favFilm">საყვარელი ფილმი:</label>
+        <input type="text" id="favFilm" name="favFilm" placeholder="მაგ. Pulp Fiction">
+
+        <label for="message">შეტყობინება:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">გაგზავნა</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quentin Tarantino. ყველა უფლება დაცულია.</p>
+  </footer>
+</body>
+</html>
